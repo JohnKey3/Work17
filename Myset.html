@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+<script>
+      function alert6() {
+
+    var id = document.getElementById('input').value;
+    console.log(id);
+        var child = 'child';
+        var children = 'children';
+     		
+     		var heh=id.replaceAll(child,children);
+     		if(heh == ''){
+     			alert('Пусто!')
+     		}
+       else{ alert(heh); }
+
+       
+
+      }
+
+      function output() {
+
+      	   var id = document.getElementById('input').value;
+        var child = 'child';
+        var children = 'children';
+     		var heh2=id.replaceAll(child,children);
+    
+     if(id == ''){
+
+     	document.getElementById('heh234').innerHTML='Пусто!';
+     }
+     else{document.getElementById('heh234').innerHTML=heh2;}
+      }
+
+
+  </script>
+
+
+<style>
+	
+button {
+	background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:  50px;
+}
+
+button:hover{
+	background-color: black;
+}
+
+.box{
+	margin-left: 700px;
+}
+.heh{
+	margin-left: 50px;
+}
+
+</style>
+
+</head>
+<body>
+
+	 <form class="box" method="post" action="">
+
+	 <b>Задание: </b>
+	 <p>Даны натуральное число n, символы s1, …, sn. Заменить в последовательности   </p>
+	 <p>s1, …,sn каждую группу букв child группой букв children</p>
+    <p><b>Введите ваши слова:</b></p>
+    <p><textarea id="input" class="input"  rows="1" cols="50" name="text" placeholder="insert here"></textarea></p>
+    <p><button class="button" type='button' onclick="output()" >textarea</button>     <button class="button2" type='button' onclick="alert6()">alert</button></p>
+    <p><b class="heh">Ниже появаится ваш изменненый текст</b></p>
+    <p><b id="heh234"></b></p>
+
+  </form>
+
+	
+	
+</body>
+</html>
